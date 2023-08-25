@@ -1,0 +1,32 @@
+.pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pokemon-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    margin-top: 1rem;
+    letter-spacing: 5px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: darkred;
+}
+.page-controls button{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 10px 2rem;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    font-size: 14;
+    font-weight: bold;
+}
+.page-controls button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}

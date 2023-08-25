@@ -4,3 +4,7 @@
     align-items: center;
     margin: 0 auto;
 }
+
+h1{
+    letter-spacing: 10px;
+}
