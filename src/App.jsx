@@ -1,15 +1,16 @@
 import './App.css'
 import Pokedex from './components/pokedex/pokedex'
-import PokemonList from './components/pokemonList/PokemonList'
-import Search from './components/search/Search'
+import { Route, Routes } from 'react-router-dom'
+import PokemonDetail from './components/pokemonDetails/PokemonDetail'
 
 function App() {
   return (
-  <> <div className='pokedex-wrapper'>
-    <Pokedex/>
-    <Search/>
-    <PokemonList/>
-  </div>
+  <> 
+    <Routes>
+        <Route path='/' element={<Pokedex/>}/>
+        <Route path='/pokemon/:id' element={<PokemonDetail/>}/>
+        <Route path='*' element={<h1>Not Found!</h1>}/>
+    </Routes>
   </> 
   )
 }
