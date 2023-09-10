@@ -1,6 +1,6 @@
 import './Pokedex.css'
-import Search from '../search/Search.jsx'
-import PokemonList from '../pokemonList/PokemonList.jsx'
+import Search from '../search/Search'
+import PokemonList from '../pokemonList/PokemonList'
 
 function Pokedex(){
 
