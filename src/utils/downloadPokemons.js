@@ -3,6 +3,7 @@ import axios from "axios";
 async function downloadPokemons(pokemonListState, setPokemonListState, defaultUrl, limit=20){
     const response = await axios.get(pokemonListState.pokedexurl ? pokemonListState.pokedexurl : defaultUrl);
     
+    //renders only initial 20 pokemons on 
     let pokemonResult = (await response).data.results ? (await response).data.results:response.data.pokemon;       //array of pokemons
     pokemonResult = pokemonResult.slice(0, limit);
     // setNextUrl(response.data.next);

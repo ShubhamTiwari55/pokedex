@@ -1,8 +1,13 @@
 import './Search.css'
 
-function Search(){
+function Search({updateSearchTerm}){
     return (
-        <input type="text" placeholder='choose the pokemon' id='search-input'/>
+        <input 
+        id='search-input'
+        type="text" 
+        placeholder='choose the pokemon' 
+        onChange={(e)=>updateSearchTerm(e.target.value)}
+        />
     )
 }
 
